@@ -10,9 +10,9 @@ Mostly one input box for the data to be analysed, and one output box which provi
 
 * 1. Descriptive statistics
 
-- One box on the left where user pastes numbers (one value per line, line breaks separate the different values). 
-- Then one button "Calculate"
-- And one box on the right where the following descriptive statistics are shown (one per line), always preceded like the text in the following so it is clear what is what:
+One box on the left where user pastes numbers (one value per line, line breaks separate the different values). 
+Then one button "Calculate"
+And one box on the right where the following descriptive statistics are shown (one per line), always preceded like the text in the following so it is clear what is what:
 
 Mean:
 Median:
@@ -28,10 +28,9 @@ Mean ± standard deviation (Minimum-Maximum):
 
 
 * 2. Test for normality
-
-- One box on the left where user pastes numbers (one value per line, line breaks separate the different values). 
-- Then one button "Calculate"
-- One box on the right where the results of the normality test is shown [it is important that the user can copy-paste the results, so they must be accessible in a box for marking and copying]
+One box on the left where user pastes numbers (one value per line, line breaks separate the different values). 
+Then one button "Calculate"
+One box on the right where the results of the normality test is shown [it is important that the user can copy-paste the results, so they must be accessible in a box for marking and copying]
 
 
 
