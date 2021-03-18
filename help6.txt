@@ -1,0 +1,10 @@
+ Paste values
+ that should be compared in an independent-samples t-test
+ and Mann-Whitney Wilcoxon U-test.
+There should be one value per line
+with periods to separate decimals
+ as in the following examples:
+ 1
+ 1.7
+ 2356
+ 97.98765

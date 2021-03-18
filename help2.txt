@@ -1,0 +1,8 @@
+ Paste here the data to be submitted
+ using several normality tests
+There should be one value per line
+with periods to separate decimals, as in the 
+following examples:
+1.7
+2356
+97.98765

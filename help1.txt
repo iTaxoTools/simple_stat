@@ -1,0 +1,9 @@
+Paste the data to be summarized in input
+ using several descriptive statistics such as 
+ mean, median, standard deviation, quartiles, and 
+others. There should be one value per line
+ with periods to separate decimals, as in the 
+following examples:
+ 1.7
+ 2356
+ 97.98765

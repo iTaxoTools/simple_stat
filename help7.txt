@@ -1,0 +1,5 @@
+ Please input uncorrected p-values. 
+Must be 1-dimensional. Please choose 
+a single-test significance level and
+ observe how the Bonferroni correction
+affects sample list of p-values already created.
