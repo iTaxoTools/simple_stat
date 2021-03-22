@@ -35,7 +35,7 @@ class DlgMain(QDialog):
         self.resize(900, 900)
         quit = QAction("Quit", self)
         quit.triggered.connect(self.closeEvent)
-        self.setWindowIcon(QIcon(resource_path('icon/stat.ico')))
+        self.setWindowIcon(QIcon(resource_path('icons/stat.ico')))
         self.setWindowTitle("Simple stats calculator")
 
 
@@ -59,7 +59,7 @@ class DlgMain(QDialog):
         self.lbl = QLabel()
         self.lbl.setMaximumSize(QSize(100, 80))
         self.lbl.setText("")
-        self.lbl.setPixmap(QPixmap(resource_path("icon/copy_21mm.png")))
+        self.lbl.setPixmap(QPixmap(resource_path("icons/copy_21mm.png")))
         self.lbl.setScaledContents(True)
         self.lbl.setObjectName("label_42")
         self.lytTree.addWidget(self.lbl)
