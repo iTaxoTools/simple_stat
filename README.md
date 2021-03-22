@@ -47,3 +47,11 @@ One box on the right where the results of the normality test is shown [it is imp
 
 * 7. Bonferroni correction
 
+
+# Run the GUI:
+
+```
+python stat_tool.py
+```
+
+
