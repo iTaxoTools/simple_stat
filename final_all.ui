@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>statistics</class>
+ <widget class="QMainWindow" name="statistics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>300</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="maximumSize">
+           <size>
+            <width>800</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Simple statistics calculator</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../mold/photo.qrc">:/icon/icon/copy_21mm.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Descriptive Statistics</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>391</width>
+            <height>441</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Input Data</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit_2">
+               <property name="lineWrapMode">
+                <enum>QPlainTextEdit::NoWrap</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton">
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::NoArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Output Results</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>100</y>
+            <width>311</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>This utility will calculate a series 
+of descriptive statistics 
+such as mean, median, standard deviation, 
+quartiles, and others.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_36">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>20</y>
+            <width>261</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Enter the data to be summarized 
+in the box &quot;Input Data&quot; 
+and press button &quot;Calculate&quot;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>220</y>
+            <width>281</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Input data should be entered 
+or pasted as one value per line, 
+with periods to separate decimals, 
+as in the following examples:
+</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>280</y>
+            <width>211</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>1.7
+2356
+97.98765</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>Normality Test</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>391</width>
+            <height>441</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>Input Data</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit_11">
+               <property name="lineWrapMode">
+                <enum>QPlainTextEdit::NoWrap</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_2">
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::NoArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>Output Results</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit_12"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>20</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Enter the data to be summarized 
+in the box &quot;Input Data&quot; 
+and press button &quot;Calculate&quot;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>80</y>
+            <width>311</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>This calculator allows you to
+ decide whether a distribution of samples
+ matches the characteristics of a 
+normal distribution. This is important to know
+ if you intend to use a 
+parametric statistical test to analyse data, 
+because these 
+normally work on the assumption 
+that data is normally distributed.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>260</y>
+            <width>291</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>P-values &gt;0.05 indicate 
+that your set of values does not 
+significantly differ from a 
+normally distributed set. If the calculation 
+results in P&gt;0.05 you can thus continue 
+assuming that your 
+data are normally 
+distributed.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_39">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>430</y>
+            <width>301</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Make sure to check appropriate 
+references to decide which 
+normality test to use. The Shapiro-Wilk test
+ is often considered
+ to be the most powerful of these 
+tests in detecting non-normality.
+</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Binomial Test</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>751</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="topMargin">
+              <number>14</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>18</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>20</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Number of &quot;successes&quot; you observed</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string> Number of trials or experiments </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_2"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>What is the hypothetical
+ probability of &quot;success&quot; in each trial? </string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEdit_3"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Calculate Binomial test</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="plainTextEdit_3">
+             <property name="maximumSize">
+              <size>
+               <width>700</width>
+               <height>100</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_53">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>370</y>
+            <width>691</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>The binomial test is calculated when there are two possible outcomes which traditionally are called &quot;success&quot; 
+and &quot;failure&quot;.
+</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_54">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>430</y>
+            <width>671</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>You know the number of times the experiments has been repeated, and the numbers of successes and failures.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_55">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>480</y>
+            <width>691</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>You also have a hypothesis for what the true overall probability of &quot;success&quot; is.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_56">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>520</y>
+            <width>681</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>The binomial test answers this question: If the true probability of &quot;success&quot; is what your theory predicts, 
+then how likely is it to find results that deviate as far, or further, from the prediction.</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Fisher's Exact Test</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>471</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>100</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Category 1</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Category 2</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Group 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_4"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLineEdit" name="lineEdit_5"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Group 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_6"/>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="lineEdit_7"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>Calculate Fisher's Exact test </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="plainTextEdit_4"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_40">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>30</y>
+            <width>231</width>
+            <height>141</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Fisher's exact test 
+is a statistical 
+test used to determine
+ if there are nonrandom 
+associations between 
+two categorical variables. 
+It is a special case 
+of a 2 x 2 contingency table.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_41">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>210</y>
+            <width>231</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>In taxonomy the test 
+could be used for instance 
+to test if a certain binary 
+character state 
+differs between two species: 
+Group 1 being species A 
+and Group 2 being 
+species B, and the values
+ to be entered being the 
+number of specimens of 
+either sex 
+observed to have a 
+broad (Category 1) or 
+narrow (Category 2) skull.</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Chi-square test</string>
+         </attribute>
+         <widget class="QSplitter" name="splitter">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>471</width>
+            <height>462</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget_4">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>100</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>No. of Rows</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>No. of Columns</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_5">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>190</number>
+            </property>
+            <item>
+             <widget class="QComboBox" name="comboBox">
+              <property name="maxVisibleItems">
+               <number>20</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_2">
+              <property name="maxVisibleItems">
+               <number>20</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QTableView" name="tableView"/>
+          <widget class="QWidget" name="layoutWidget_6">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>100</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="text">
+               <string>Make table</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="text">
+               <string>Calculate Chi-square test</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPlainTextEdit" name="plainTextEdit_5"/>
+         </widget>
+         <widget class="QLabel" name="label_42">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>10</y>
+            <width>251</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>The Chi-square Test 
+examines a contingency table of 
+categorical variables 
+(e.g., counts or numbers 
+of observations).</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_43">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>110</y>
+            <width>241</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>In taxonomy 
+you can for example compare the 
+distribution of a categorical variable 
+of four character states 
+among three species, e.g., 
+dewlap colour 
+(brown, white, orange, green) 
+among 
+three species of anoles.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_44">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>280</y>
+            <width>251</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>For this you define 
+three rows (species) and
+ four columns (colours). 
+Then you press &quot;make table&quot; and 
+enter the respective individual 
+counts of colours in 
+each species into the table, then 
+calculate the Chi-squareTest.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_45">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>460</y>
+            <width>251</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>If the 
+resulting p-value is &lt;0.05, then there 
+are significant differences in the 
+distribution of character states 
+among the species.</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Independent Samples Tests (t / U)</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>471</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>50</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                   <italic>false</italic>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>First Data</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPlainTextEdit" name="plainTextEdit_6">
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_17">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                   <italic>false</italic>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Second Data</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPlainTextEdit" name="plainTextEdit_7">
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="text">
+                <string>Result</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit_8">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>0</y>
+            <width>241</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>A calculator for 
+two commonly used tests to 
+determine whether there is a 
+statistically 
+significant difference between 
+the means in two unrelated groups 
+for continuous numerical variables.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_46">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>150</y>
+            <width>251</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student's t-test is a parametric
+ test requiring normality of data 
+whereas Mann-Whitney U-test 
+is non-parametric. The t-test 
+is usually more 
+powerful and detects significant 
+differences in cases where the 
+U-test may not (i.e., the 
+U-test is 
+more &quot;conservative&quot;).</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_47">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>681</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>A typical example from taxonomy would be the comparison of a morphometric measurement such as 
+body length between two species: Enter or paste the data of the first species under &quot;First data&quot; and 
+those of the second species under &quot;Second Data&quot;, and press button &quot;Calculate&quot;. Numbers of measured 
+specimens can differ among the two species and the order of the values is not relevant.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_48">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>530</y>
+            <width>711</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>A significant P-value (P&lt;0.05) indicates that the null hypothesis can be rejected and thus, significant 
+differences between the two species in the analyzed variable are detected.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_49">
+          <property name="geometry">
+           <rect>
+            <x>486</x>
+            <y>350</y>
+            <width>261</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Note that using these tests with 
+very small sample sizes smaller than 5 
+per species makes little sense.</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>Bonferroni Correction</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>491</width>
+            <height>441</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <property name="spacing">
+              <number>30</number>
+             </property>
+             <property name="topMargin">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QComboBox" name="comboBox_4">
+               <item>
+                <property name="text">
+                 <string>bonferroni</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>sidak</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>holm-sidak</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>holm</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>simes-hochberg</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>hommel</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>fdr_bh</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>fdr_by</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>fdr_tsbh</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>fdr_tsbky</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_3">
+               <item>
+                <property name="text">
+                 <string>0.1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0.05</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>0.01</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit_9">
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="plainTextEdit_10">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>30</y>
+            <width>241</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Please input uncorrected p-values. 
+Must be 1-dimensional. 
+
+Please choose a single-test 
+significance level and observe 
+
+how the Bonferroni correction
+affects sample list of p-values 
+already created.</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_8">
+         <attribute name="title">
+          <string>Rule of Three</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>510</width>
+            <height>566</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <property name="leftMargin">
+                <number>20</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_25">
+                   <property name="font">
+                    <font>
+                     <pointsize>16</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Rule of Three</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_26">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Calculator</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QSplitter" name="splitter_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <widget class="QLabel" name="label_27">
+                  <property name="text">
+                   <string>Type of proportions:</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="b11">
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="text">
+                   <string>Direct (if magnitude increases, the other one also increases)(default)</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="b22">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>true</bool>
+                  </property>
+                  <property name="text">
+                   <string>Inverse (if magnitude increases, the other one decreases)</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <property name="horizontalSpacing">
+                <number>20</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>60</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_28">
+                   <property name="text">
+                    <string>If the quantity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QRadioButton" name="b1">
+                     <property name="maximumSize">
+                      <size>
+                       <width>30</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="autoFillBackground">
+                      <bool>false</bool>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string notr="true" extracomment="Please type here"/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="l1">
+                     <property name="maximumSize">
+                      <size>
+                       <width>130</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_29">
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>icon/rule3a.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="1">
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_19">
+                   <item>
+                    <widget class="QLabel" name="label_30">
+                     <property name="text">
+                      <string>corresponds to:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSplitter" name="splitter_3">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <widget class="QRadioButton" name="b2">
+                      <property name="maximumSize">
+                       <size>
+                        <width>20</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string notr="true"/>
+                      </property>
+                     </widget>
+                     <widget class="QLineEdit" name="l2">
+                      <property name="maximumSize">
+                       <size>
+                        <width>130</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_31">
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>icon/rule3b.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_20">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_21">
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_32">
+                     <property name="text">
+                      <string>Then, the following quantity</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSplitter" name="splitter_4">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <widget class="QRadioButton" name="b3">
+                      <property name="maximumSize">
+                       <size>
+                        <width>30</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string notr="true"/>
+                      </property>
+                     </widget>
+                     <widget class="QLineEdit" name="l3">
+                      <property name="maximumSize">
+                       <size>
+                        <width>130</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_33">
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>icon/rule3c.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="1">
+                <layout class="QVBoxLayout" name="verticalLayout_22">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_23">
+                   <item>
+                    <widget class="QLabel" name="label_34">
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>correspond to:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSplitter" name="splitter_5">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <widget class="QRadioButton" name="b4">
+                      <property name="maximumSize">
+                       <size>
+                        <width>20</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="text">
+                       <string notr="true"/>
+                      </property>
+                     </widget>
+                     <widget class="QLineEdit" name="l4">
+                      <property name="maximumSize">
+                       <size>
+                        <width>130</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_35">
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>icon/rule3d.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p">
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_50">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>30</y>
+            <width>211</width>
+            <height>141</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>The Rule of Three allows 
+solving problems 
+based on proportions. 
+By having three numbers: 
+a, b, c, such that, 
+( a / b = c / x), (i.e., a: b :: c: x ) 
+you can calculate the 
+unknown number.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_51">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>210</y>
+            <width>201</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>In the current calculator, 
+please first choose if 
+you want to calculate 
+a direct relationship 
+(most commonly) or an 
+inverse relationship between 
+the numbers.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_52">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>370</y>
+            <width>201</width>
+            <height>141</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Then, enter the three 
+values that you have available, 
+press the radio button on the 
+value that should be 
+calculated, and 
+press &quot;Calculate&quot;.</string>
+          </property>
+         </widget>
+         <zorder>layoutWidget_10</zorder>
+         <zorder></zorder>
+         <zorder>label_50</zorder>
+         <zorder>label_51</zorder>
+         <zorder>label_52</zorder>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../mold/photo.qrc"/>
+  <include location="../../photo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
