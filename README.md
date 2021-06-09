@@ -51,7 +51,7 @@ One box on the right where the results of the normality test is shown [it is imp
 # Run the GUI:
 
 ```
-python stat_tool.py
+python all.py
 ```
 
 
